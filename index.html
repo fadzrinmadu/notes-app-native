@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <title>Notes App</title>
+</head>
+<body>
+  
+  <header>
+    <app-bar></app-bar>
+  </header>
+  
+  <main>
+    <div class="container">
+      <!-- Notes -->
+      <section id="notesSection" class="notes">
+        <title-section
+          title="Active Notes"
+          textButton="Add New"
+        ></title-section>
+        
+        <div id="noteListContainer" class="note-list-container">
+          <note-list></note-list>
+        </div>
+      </section>
+      
+      <!-- Create Note Form -->
+      <section id="formSection" class="form">
+        <title-section
+          title="Create Notes"
+          textButton="Back"
+        ></title-section>
+        
+        <div id="noteFormContainer" class="note-form-container">
+          <note-form></note-form>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <footer-bar></footer-bar>
+  </footer>
+  
+  <script type="module" src="/src/app.js"></script>
+</body>
+</html>
